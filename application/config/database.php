@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 if($_SERVER['HTTP_HOST'] == '192.168.2.2' || $_SERVER['HTTP_HOST'] == 'localhost'){	
-	$dbName = 'launchestore_dev';
+	$dbName = 'les-development';
 	$userName = 'root';
 	$password = 'root';
 	$host = 'localhost';	
@@ -81,7 +81,7 @@ if($_SERVER['HTTP_HOST'] == '192.168.2.2' || $_SERVER['HTTP_HOST'] == 'localhost
 	$host = 'localhost';
 	$userName = 'a1630btr_development_user';
 	$password = 'Ra#Ch^1j.sLR';
-	$dbName = 'a1630btr_bigbucket_2';	
+	$dbName = 'a1630btr_les_development';
 }
 
 // echo $dbName;die;

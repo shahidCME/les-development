@@ -26,7 +26,7 @@ ob_start();
 |
 */
 // $config['base_url'] = 'https://'.$_SERVER['HTTP_HOST'].'/';
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/stagging/';
+$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/les_development/';
 $config['stripe_key'] = 'pk_test_51H59i2DVAngiEaaeiOUYgPeoo9h9jHhOq51rRD4FS65nBMyQY3QhWGq1A8YTyzSgOtpuGTVUBMoEUarj95hpzojE00jvY9A4lv';
 $config['stripe_secret'] = 'sk_test_51H59i2DVAngiEaaeE6jEdkxk3JgjkqnvkuYo0g1pJXPPP1RONfoB8z8KaImBtReMCGLX92pitvECYetgsONtz58500q9i3L6Oc';
 /*
