@@ -11,10 +11,14 @@ class Vendors extends User_Controller {
 		
 		$this->load->model($this->myvalues->vendorFrontEnd['model'],'this_model');
 		$this->session->unset_userdata('isSelfPickup');
+		if(!isset($_SESSION['language'])){
+			$_SESSION['language'] = 'en';
+		}
 	}
 
 
 	public function index(){
+		// dd($_SESSION['language']);
 		$data['page'] = 'frontend/vendor/vendor';
 		$data['js'] = array('vendor.js');
 		$data['branch'] = $this->this_model->branchList();
@@ -158,5 +162,11 @@ class Vendors extends User_Controller {
 
 	}
 
+	public function setLanguage(){
+		if($this->input->post()){
+			$_SESSION['language'] = $this->input->post('lang'); 
+		}
+		return true;
+	}
 
 }

@@ -148,5 +148,22 @@ height: 20px;
     width: 50px;
   
 }
+
+/* google traslater*/
+body {
+top: 0px !important; 
+}
+
+.goog-logo-link {
+    display:none !important;
+} 
+    
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+display: none !important;
+} 
 </style>
 <input type="hidden" id="siteCurrency" value="<?=$this->siteCurrency?>">

@@ -425,4 +425,40 @@ if (!empty($init)) {
 </script>
 
 
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
+<script type="text/javascript">
+function googleTranslateElementInit() {
+   new google.translate.TranslateElement({pageLanguage: 'en' , includedLanguages : 'ar,en'}, 'google_translate_element');
+}
+$(document).on('change','.goog-te-combo',function (){
+    var value = $(this).val(); 
+    if(value != ''){
+      $.ajax({
+          url : base_url+'vendors/setLanguage',
+          type:'post',
+          async : false,
+          data: {lang:value},
+          success:function(out){
+            if(value=='ar'){
+              $('body').attr('dir','rtl');
+            }else{
+              $('body').attr('dir','');
+            }
+            new google.translate.TranslateElement({pageLanguage: 'en' , includedLanguages : 'ar,en'}, 'google_translate_element');
+            // window.location.reload();        
+          }
+      })
+
+    }else{
+      new google.translate.TranslateElement({pageLanguage: 'en' , includedLanguages : 'ar,en'}, 'google_translate_element');
+      if(value=='ar'){
+              $('body').attr('dir','rtl');
+            }else{
+              $('body').attr('dir','');
+            }
+      // window.location.reload();
+    }
+})
+</script>
 

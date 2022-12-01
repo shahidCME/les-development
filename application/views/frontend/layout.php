@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=<?=($_SESSION['language'] == 'ar') ? 'rtl' : 'ltr' ?>>
 <head>
  <?php $this->load->view('frontend/include/header'); ?>
 </head>

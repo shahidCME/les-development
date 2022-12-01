@@ -16,6 +16,7 @@
                 <li> <a href="<?=base_url().'contact'?>">contact us</a> </li>
               </ul>
             </div>
+            <div id="google_translate_element"></div>
             <?php if($this->uri->segment(1) == ''){ ?>
             <div class="search-wrap">
              <input type="text" name="search" id='search' data-search_val= "" class="form-control" placeholder="Search vendor..">
